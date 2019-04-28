@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="text-center">
+      <h1 class="text-center">7 Seas</h1>
+      <button class="btn btn-info" style="margin: 1em"><%= link_to "Add a Sea", new_sea_path %> </button>
+    </div>
+
+    <% @seas.each do |sea| %>
+      <div class="col-md-4 text-center" style="padding: 1em">
+        <div class="card">
+          <%=link_to sea, sea_path(sea)%> <img class="card-img-top img-thumbnail" style="height: 15rem" src="<%= sea.image_url %>" alt="sea"/>
+          <div class="card-block">
+            <h4 class="card-title text-center"><%= sea.name %></h4>
+            <p class="card-text" style="height: 10rem"><%= sea.bio %></p>
+            <%=link_to "Sea Profile", sea_path(sea) %> <style="width: 100%" class="btn btn-info"/>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
