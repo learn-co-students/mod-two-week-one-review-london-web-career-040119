@@ -9,6 +9,60 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+
+    <footer class="container branding text-center">
+      <br>
+      <small> <strong style="color:#BBB;">
+        <% case 1 + rand(15)
+        when 1 %>
+        <p><i>“Day after day, day after day,
+        <br />We stuck, nor breath nor motion;
+        <br />As idle as a painted ship
+        <br />Upon a painted ocean.”</i></p> <p>-Samuel Taylor Coleridge</p>
+    		<% when 2 %>
+        <p><i>“There is pleasure in the pathless woods,
+          there is rapture in the lonely shore,
+          there is society where none intrudes,
+          by the deep sea, and music in its roar;
+          I love not Man the less, but Nature more.”</i></p> <p>-Lord Byron</p>
+        <% when 3 %>
+        <p><i>“The sea is only the embodiment of a supernatural and wonderful existence.”</i></p> <p>-Jules Verne</p>
+        <% when 4 %>
+        <p><i>“The sea, once it casts its spell, holds one in its net of wonder forever.”</i></p> <p>-Jacques Yves Cousteau</p>
+        <% when 5 %>
+        <p><i>“You can't cross the sea merely by standing and staring at the water.</i></p> <p>&mdash;Rabindranath Tagore</p>
+        <% when 6 %>
+        <p><i>“I must be a mermaid, Rango. I have no fear of depths and a great fear of shallow living.”</i></p> <p>&mdash;Anais Nin</p>
+    		<% when 7 %>
+        <p><i>“Look at that sea, girls--all silver and shadow and vision of things not seen. We couldn't enjoy its loveliness any more if we had millions of dollars and ropes of diamonds.”</i></p> <p>&mdash; Lucy Maud Montgomery, Anne of Green Gables</p>
+        <% when 8 %>
+        <p><i>“A fragrant breeze wandered up from the quiet sea, trailed along the beach, and drifted back to the sea again, wondering where to go next. On a mad impulse it went up to the beach again. It drifted back to sea.”</i></p> <p>&mdash; Douglas Adams, The Ultimate Hitchhiker's Guide: Five Complete Novels and One Story</p>
+        <% when 9 %>
+        <p><i>“With every drop of water you drink, every breath you take, you're connected to the sea. No matter where on Earth you live.”</i></p> <p>&mdash; Sylvia Earle, Oceanographer</p>
+        <% when 10 %>
+        <p><i>“The sea is as near as we come to another world.”</i></p> <p>&mdash; Anne Stevenson</p>
+        <% when 11 %>
+        <p><i>“The sea does not reward those who are too anxious, too greedy, or too impatient. One should lie empty, open, choiceless as a beach - waiting for a gift from the sea.”</i></p> <p>&mdash; Anne Morrow Lindbergh</p>
+        <% when 12 %>
+        <p><i>“The cure for anything is salt water: sweat, tears, or the sea.”</i></p> <p>&mdash; Isak Dinesen (Karen Blixen)</p>
+        <% when 13 %>
+        <p><i>“A ship in harbor is safe — but that is not what ships are built for.”</i></p> <p>&mdash; Grace Murray Hopper</p>
+        <% when 14 %>
+        <p><i>“How foolish to believe we are more powerful than the sea or the sky.”</i></p> <p>&mdash; Ruta Sepetys, Salt to the Sea</p>
+        <% when 15 %>
+        <p><i>“If you want to build a ship, don't drum up people to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.”</i></p> <p>&mdash; Antoine de Saint Exupery</p>
+        <% end %>
+      </strong></small>
+    </footer>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!--[if lt IE 7]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]-->
   </body>
 </html>

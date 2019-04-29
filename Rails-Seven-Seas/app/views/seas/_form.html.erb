@@ -1,0 +1,46 @@
+<%= form_for @sea do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </p>
+
+  <p>
+    <%= f.label :temperature %>
+    <%= f.number_field :temperature, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :bio %>
+    <%= f.text_area :bio, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :mood %>
+    <%= f.text_field :mood, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :favorite_color %>
+    <%= f.text_field :favorite_color, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :scariest_creature %>
+    <%= f.text_field :scariest_creature, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.label :has_mermaids %>
+    <%= f.check_box :has_mermaids, class: 'form-control'  %>
+  </p>
+
+  <p>
+    <%= f.submit 'Create sea', class: 'form-control btn bnt-info' %>
+  </p>
+
+<% end %>
